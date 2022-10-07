@@ -1,4 +1,4 @@
-Feature: Capitals
+ Feature: Capitals
 Scenario Outline: Capitals Search
 
 Given url git
