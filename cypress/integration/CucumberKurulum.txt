@@ -1,4 +1,4 @@
-1) https://www.npmjs.com/package/cypress-cucumber-preprocessor
+1) Cypress 9.7.0 ı kur -->   https://www.npmjs.com/package/cypress-cucumber-preprocessor
 
 2) npm install --save-dev cypress-cucumber-preprocessor
 
@@ -25,3 +25,25 @@
 import { Given, And, When, Then } from "cypress-cucumber-preprocessor/steps";
 
 NOT: feature file dosya ismi ile step defination klasörünün ismi aynı olmak zorunda
+
+
+
+TESTLERİ CALIŞTIRMA
+
+.\node_modules\.bin\cypress run
+
+.\node_modules\.bin\cypress-tags run -e TAGS="@manager_id1"
+Tag’ı @manager_id olan testi çalıştır
+
+
+
+.\node_modules\.bin\cypress-tags run -e TAGS="@smoke"
+Tag’ı ‘@smoke’ olan testi çalıştır
+
+
+.\node_modules\.bin\cypress-tags run -e TAGS="not @manager_id"
+Tag’ı @manager_id olanlar hariç hepsini çalıştır
+
+
+
+Windows da hata alınınca kullanıclak  -->  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser

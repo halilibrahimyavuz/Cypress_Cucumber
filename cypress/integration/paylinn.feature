@@ -1,5 +1,7 @@
 Feature: Login Test
 
+
+@smoke
 Scenario: TC01_Login
 
 Given url git
